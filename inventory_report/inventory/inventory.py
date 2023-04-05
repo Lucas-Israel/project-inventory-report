@@ -78,11 +78,3 @@ class Inventory:
                 }
                 new_list.append(new_obj)
         return new_list
-
-
-if __name__ == "__main__":
-    csvf = Inventory.import_data(
-        "inventory_report/data/inventory.xml",
-        report_type="simples",
-    )
-    print(csvf)

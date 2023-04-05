@@ -37,9 +37,3 @@ class XmlImporter(Importer):
         extention = re.sub(r"\w*.*\.", "", file_path)
         if extention != "xml":
             raise ValueError("Arquivo inválido")
-
-
-if __name__ == "__main__":
-    a = XmlImporter.import_data("inventory_report/data/inventory.xml")
-    for element in a:
-        print(f"{element}\n")

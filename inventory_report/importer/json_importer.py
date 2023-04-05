@@ -23,8 +23,3 @@ class JsonImporter(Importer):
         extention = re.sub(r"\w*.*\.", "", file_path)
         if extention != "json":
             raise ValueError("Arquivo inválido")
-
-
-if __name__ == "__main__":
-    a = JsonImporter.import_data("inventory_report/data/inventory.json")
-    print(a)
