@@ -22,9 +22,7 @@ class JsonImporter(Importer):
     def __extention_check(file_path):
         extention = re.sub(r"\w*.*\.", "", file_path)
         if extention != "json":
-            raise ValueError(
-                f"file must be .json, received a .{extention} file instead"
-            )
+            raise ValueError("Arquivo inválido")
 
 
 if __name__ == "__main__":

@@ -22,6 +22,4 @@ class CsvImporter(Importer):
     def __extention_check(file_path):
         extention = re.sub(r"\w*.*\.", "", file_path)
         if extention != "csv":
-            raise ValueError(
-                f"file must be .csv, received a .{extention} file instead"
-            )
+            raise ValueError("Arquivo inválido")
